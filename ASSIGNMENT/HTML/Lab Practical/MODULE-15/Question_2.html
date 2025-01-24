@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <form>
+        <table cellspacing="0" cellpadding="10">
+            
+            <tr>
+                <th> <label for="">Full name</label></th>
+                <td> <input type="text" placeholder="ENTER YOUR NAME"  pattern="[A-Za-z]{6,}" required> </td>
+            </tr>
+            <tr>
+                <th> <label for="">Email</label></th>
+                <td> <input type="email" placeholder="ENTER YOUR Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 7}$" required></td>
+            </tr>
+            <tr>
+                <th> <label for="">Phone no</label></th>
+                <td> <input type="tel" placeholder="ENTER YOUR Phone no"  pattern="[0-9" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <th> <label for="">subject</label></th>
+                <td>
+                    <select>
+                        <option>subject</option>
+                        <option>sci</option>
+                        <option>gk</option>
+                        <option> maths</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <th> <label for="">Message</label></th>
+                    <td> <textarea name="" id="" cols="30" rows="10"  placeholder="Message"></textarea>
+                </tr>
+                <tr>
+                    <td> <input type="submit"</td>
+                </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
