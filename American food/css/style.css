@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utlites class */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background-color: #3d5f00;
+}
+
+.navabar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: white;
+}
+
+.icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.main-content {
+    background-image: url(/images_1/about.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data {
+    letter-spacing: 0px;
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+}
+
+.data .h1-header {
+    font-size: 67px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.data .h3-header {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.data .hr {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.data .p-header {
+    width: 22%;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 20px 0;
+}
+
+.data .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.data .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+/* header end */
+
+/* About start */
+#About {
+    padding: 30px 0;
+}
+
+.aboutus {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.aboutus .h2-about {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.aboutus .p-about {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.about-main .row {
+    display: flex;
+}
+
+.about-main .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.about-content {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.about-content .h3-about {
+
+    font-size: clamp(20px, 7vw, 54px);
+    font-weight: 500;
+}
+
+.about-content .para {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.about-content .para1 {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-content .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.about-content .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.about-main .abouts {
+    /* background: url("/Images/about.png"); */
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/images_1/main.png");
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.abouts .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: RED;
+    z-index: 2;
+}
+
+
+/* section3 start */
+#About {
+    padding: 30px 0;
+}
+
+.aboutus {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.aboutus .h2-about {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.aboutus .p-about {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.about-main .row {
+    display: flex;
+}
+
+.about-main .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.about-content {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+
+.about-content .h3-about {
+
+    font-size: clamp(20px, 7vw, 54px);
+    font-weight: 500;
+
+
+}
+
+.about-content .para {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.about-content .para1 {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-content .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.about-content .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.about-main .abouts {
+    background: url("/Images/about.png");
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/images_1/main.png");
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.abouts .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: RED;
+    z-index: 2;
+}
+
+/* service start */
+.service {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.service .h2-service {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.service .p-service {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.service-main {
+    margin: 20px 0;
+}
+
+.service-main .row {
+    display: flex;
+    gap: 30px;
+}
+
+.service-main .row .col-7 {
+    width: 70%;
+    /* border: 2px solid; */
+}
+
+.service-main .row .col-3 {
+    width: 30%;
+    /* border: 2px solid; */
+}
+
+.service-card .service-data {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(20px, 6.7vw, 50px);
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.service-card .p-card {
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 90%;
+    margin: 20px 0;
+}
+
+.service-card .btn-service {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* service end */
+
+/* discount start */
+
+.main-content1 {
+    background-image: url(/images_1/4\ image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data {
+    letter-spacing: 0px;
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+}
+
+.h4-header1 {
+    font-size: 33px;
+    letter-spacing: 1spx;
+    line-height: 100px;
+    color: #3d5f00;
+    font-weight: 100;
+    font-family: "Roboto";
+}
+
+.data .h1-header1 {
+
+    font-size: 58px;
+    line-height: 10px;
+    color: #3d5f00;
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-top: 15px;
+}
+
+.data .h3-header1 {
+
+    font-size: 33px;
+    letter-spacing: 14px;
+    line-height: 129px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+
+
+
+.data .p-header1 {
+    width: 37%;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-bottom: 20px;
+}
+
+.data .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.data .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+/* discount end */
+
+/* price start */
+.price {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.price .h2-price {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.price .p-price {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.price-main .row {
+    display: flex;
+    gap: 40px;
+}
+
+.price-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.price-card {
+    background-color: #608b14;
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.price-card .h3-price {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.price-card .h2-card-price {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.price-content {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.price-content .h4-price {
+    font-size: 29px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 10px 0;
+}
+
+.price-content .btn-price {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    margin-top: 20px;
+}
+
+/* price end */
+/* discount start */
+.header-1 {
+    background-image: url(/images_1/5\ image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data1 {
+    letter-spacing: 0px;
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+}
+
+.h4-header1 {
+    font-size: 33px;
+    letter-spacing: 1spx;
+    line-height: 100px;
+    color: #3d5f00;
+    font-weight: 100;
+    font-family: "Roboto";
+     
+    
+}
+
+.data .h1-header1 {
+
+    font-size: 58px;
+    line-height: 10px;
+    color: #3d5f00;
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-top: 15px;
+}
+
+.data .h3-header1 {
+
+    font-size: 33px;
+    letter-spacing: 14px;
+    line-height: 129px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+
+
+
+.data2 .p-header1 {
+    width: 30%;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-bottom: 20px;
+    margin-left: 70%;
+
+}
+
+.data2 .btn-header {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.data .btn-icon {
+    border: none;
+    padding: 10px;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+.data2{
+    text-align:right;
+    letter-spacing: 0px;
+    color: #3d5f00;
+    font-family: "Alegreya Sans";
+    padding: 70px 0;
+    
+    
+ 
+}
+ 
+/* discount end */
+
+/* BLOGstart */
+.BLOG {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.BLOG.h2-BLOG {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.BLOG .p-BLOG {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.BLOG-main .row {
+    display: flex;
+    gap: 40px;
+}
+
+.BLOG-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.BLOG-card2 {
+
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family: "Roboto";
+    color: #3d5f00;
+    padding: 40px 0;
+}
+
+.BLOG-card .h1-BLOG {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.p-BLOG {
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding: 37px 0;
+    
+}
+
+.BLOG-card .h2-card-BLOG {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.BLOG-content {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.BLOG-content .h4-BLOG {
+    font-size: 29px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 10px 0;
+}
+
+.BLOG-content .btn-BLOG {
+    background-color: #3d5f00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+/* BLOG end */

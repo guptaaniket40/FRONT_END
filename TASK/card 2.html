@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 450px;
+            width: 250px;
+            border: 2px solid black;
+            margin: 200px auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 70px auto;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+        .quick{
+            height: 30px;
+            width: 250px;
+            border: 2px solid black;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 20px;
+            background-color: black;
+            color: aliceblue;
+
+        }
+        .new{
+            height: 25px;
+            width: 55px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            right: 0px;
+            text-align: center;
+            padding-top: 10px;
+            font-family: sans-serif;
+        }
+        .image:hover{
+            transform: rotateY(360deg);
+            transition: 0.5s;
+       }
+       .div2{
+        height: 100px;
+        width: 250px;
+        border: 2px solid black;
+     }
+     .main:hover .quick{
+            transform: translateY(320px);
+            transition: 0.7s;
+     }
+     .quick:hover{
+        background-color: aqua;
+     }
+     .div2{
+            height: 100px;
+            width: 250px;
+            
+            position: absolute;
+            margin-top: 550px;
+            margin-left: 262px;
+            bottom: 500px;
+            left: 450px;
+            top: 2px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        .button{
+            position: absolute;
+            height: 40px;
+            width:150px;
+            background-color: aqua;
+            margin-left: 500px;
+            left:50px;
+            text-align: center;
+            line-height: 40PX;
+             
+
+        }
+        .border{ 
+            position: absolute;
+            height: 40px;
+            width:150px;
+            margin-left: 500px;
+            margin-bottom: 300px;
+            left:50px;
+            border: 2px solid aqua;
+            
+        }
+        .border:hover{
+            
+            transform: scale(1.2);
+            transition: 0.7s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="quick">quick view</div>
+        <div class="new">New</div>
+        <div class="image"></div>
+        
+    </div>
+    <div class="div2">
+        <div class="cart"> <a href="" >FORMAL BLUE SHIRT</a><br>  $45.99</div>
+    </div>
+    <div class="button"> ADD TO CART
+                     
+    </div>
+    <div class="border"></div>
+
+
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .navbar .list{
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .ullist{
+            position: absolute;
+            background-color: aqua;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 0px;
+            display: none;
+        }
+        .ullist li{
+            border: 2px solid;
+            padding: 10px;
+        }
+        .list:hover .ullist{
+            display: block;
+        }
+        .ullist li:hover{
+            background-color: lightgreen;
+        }
+        .list2{
+            position: absolute;
+            background-color: aqua;
+            top: 0%;
+            left: 100%;
+            list-style: none;
+            padding: 0px;
+            display: none;
+        }
+        .list2 .list1{
+            border: 2px solid;
+            padding: 10px;
+        }
+        .list1:hover .list2{
+            display: block;
+        }
+        .list2 li:hover{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="list">Home
+            <ul class="ullist">
+                <li class="list1">Home 1
+                    <ul class="list2">
+                        <li>about 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li>   
+                    </ul>
+
+                </li>
+                <li class="list1">Home 2
+                    <ul class="list2">
+                        <li>ghghdtout 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li>   
+                    </ul>
+                </li>
+                <li class="list1">Home 3
+                    <ul class="list2">
+                        <li>glkkhcvdskl 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li>   
+                    </ul>
+
+                </li>
+                <li class="list1">Home 4
+                    <ul class="list2">
+                        <li>dtout 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li>   
+                    </ul>
+                </li>   
+            </ul>
+        </li>
+        <li class="list">about
+            <ul class="ullist">
+                <li class="list1">about 1
+                    <ul class="list2">
+                        <li>hello 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>
+                <li class="list1">about 2
+                    <ul class="list2">
+                        <li>hiii 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+
+                </li>
+                <li class="list1">about 3
+                    <ul class="list2">
+                        <li>aniket 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>
+                <li class="list1">about 4
+                    <ul class="list2">
+                        <li>nikhil 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>   
+                <li class="list1" >about 5
+                    <ul class="list2">
+                        <li>ajay 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>   
+            </ul>
+        </li>
+        <li class="list">Contact
+            <ul class="ullist">
+                <li class="list1">contact 1
+                    <ul class="list2">
+                        <li>sanjay 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>
+                <li class="list1">contact 2
+                    <ul class="list2">
+                        <li>akash 1</li>
+                        <li>about 2</li>
+                        <li>about 3</li>
+                        <li>about 4</li>   
+                        <li>about 5</li> 
+                    </ul>
+                </li>
+               
+            </ul>
+        </li>
+        <li class="list">Help</li>
+    </ul>
+</body>
+</html>
