@@ -1,1 +1,172 @@
- 
+@media screen and (max-width: 768px) {
+    /* Header adjustments */
+    .navabar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .lists {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .lists .list {
+        margin: 0 8px;
+    }
+    
+    .list .nav-a {
+        font-size: 18px;
+    }
+    
+    /* Main content section */
+    .data {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    
+    .dog1 {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        order: 1;
+    }
+    
+    .dog {
+        width: 80%;
+        margin: 0 auto 20px;
+        order: 0;
+    }
+    
+    .dog3 {
+        text-align: center;
+    }
+    
+    .dog3 img {
+        width: 60%;
+        height: auto;
+    }
+    
+    .data .h1-header {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .data .p-header {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .data .btn-header, .data .btn-header1 {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    
+    /* About section */
+    .about-main .row {
+        flex-direction: column;
+    }
+    
+    .about-main .row .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .about-content {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .about-content .para {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-content .btn-header {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .about-main .abouts {
+        width: 90%;
+        height: 300px;
+    }
+    
+    /* Title sections */
+    .title .p-title1 {
+        width: 95%;
+    }
+    
+    .title-main .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .title-main .row .col {
+        width: 100%;
+    }
+    
+    .title-card {
+        padding: 20px 0;
+    }
+    
+    .title-card img {
+        width: 60%;
+        height: auto;
+    }
+    
+    .p-title {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    /* Vetcare team section */
+    .vetcare .p-vetcare2 {
+        width: 95%;
+    }
+    
+    .vetcare-main .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .vetcare-main .row .col {
+        width: 100%;
+    }
+    
+    .vetcare-card img {
+        width: 60%;
+        height: auto;
+    }
+    
+    /* Footer section */
+    #Footer .row {
+        flex-direction: column;
+    }
+    
+    #Footer .row .col-4,
+    #Footer .row .col-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .col-6 .row {
+        flex-direction: column;
+    }
+    
+    .col-6 .row .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer .p-footer {
+        width: 100%;
+    }
+}

@@ -12,7 +12,7 @@
 
 /* header start */
 .header {
-    background-color: #3d5f00;
+    background-color: #daac00;
 }
 
 .navabar {
@@ -23,7 +23,7 @@
 }
 
 .logo {
-    width: 70px;
+    width: 100px;
 }
 
 .lists .list {
@@ -44,19 +44,18 @@
     font-size: 24px;
 }
 
-.icon .bar {
-    color: white;
-    font-size: 24px;
-    display: none;
-}
+
 
 .main-content {
-    background-image: url("/Images/main.png");
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .data {
+    display: flex;
+    background-color: #fcc302;
+    width: 100%;
     letter-spacing: 0px;
     color: #3d5f00;
     font-family: "Alegreya Sans";
@@ -65,46 +64,693 @@
 
 .data .h1-header {
     /* min and (vw) max */
-    font-size: clamp(24px, 7vw, 67px);
-    text-transform: uppercase;
-    font-weight: 800;
+    font-size: 67px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
 }
 
-.data .h3-header {
+
+
+.data .p-header {
+    width: 430px;
+    height: 115px;
+    margin-top: 10px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: clamp(18px, 3.2vw, 21px);
+
+}
+
+.data .btn-header {
+    border-radius: 7px;
+    background-color: #00bec9;
+    margin-top: 10px;
+    border: 1px solid blue;
+    padding: 10px 20px;
+    font-size: clamp(18px, 3.2vw, 25px);
+
+    color: white;
+}
+
+.data .btn-header1 {
+    border-radius: 7px;
+    background-color: #fcc302;
+    margin-left: 50px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: clamp(18px, 3.2vw, 25px);
+    color: white;
+
+
+}
+
+.dog1 {
+
+    width: 60%;
+    padding-left: 10%;
+    padding-top: 0%;
+}
+
+.dog {
+    width: 25%;
+
+}
+
+.dog3 {
+    rotate: 360deg;
+}
+
+/* header end */
+
+/* About start */
+#About {
+    padding: 30px 0;
+}
+
+
+
+.about-main .row {
+    display: flex;
+}
+
+.about-main .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.about-content {
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.about-content .h3-about {
+
     font-size: clamp(20px, 7vw, 54px);
     font-weight: 500;
 }
 
-.data .hr {
-    width: 300px;
-    margin: 10px 0;
-}
-
-.data .p-header {
-    width: 40%;
-    font-size: 21px;
-    font-size: clamp(18px, 3.2vw, 21px);
+.about-content .para {
+    font-size: clamp(18px, 3vw, 25px);
     font-weight: 400;
-    font-family: "Roboto";
+    width: 80%;
     margin: 20px 0;
+    color: #313243;
+
 }
 
-.data .btn-header {
+
+
+.about-content .btn-header {
+    border-radius: 7px;
+    background-color: #fcc302;
+    margin-right: 30px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+
+.about-main .abouts {
+    /* background: url("/Images/about.png"); */
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/images_1/image2.png");
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.abouts .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    z-index: 2;
+    radius: 50%;
+}
+
+/*about end*/
+/* title start */
+.title {
+    background-color: #fcc302;
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.title .h2-title {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.title .p-title1 {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+    font-size: 38px;
+
+}
+
+.p-title {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    width: 650px;
+}
+
+.title-main .row {
+    display: flex;
+    gap: 40px;
+}
+
+.title-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.title-card {
+
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.title-card .h3-title {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.title-card .h2-card-title {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.title-content {
+    background-color: #fcc302;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title-content .h4-title {
+    font-size: 29px;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 10px 0;
+    font-size: 38px;
+
+}
+
+.title-content .btn-title {
     background-color: #3d5f00;
     border: none;
     padding: 10px 20px;
     border-radius: 20px 0 20px 0;
     color: white;
+    margin-top: 20px;
 }
 
-.data .btn-icon {
-    border: none;
-    padding: 10px;
-    background-color: #3d5f00;
-    border-radius: 10px 0 10px 0;
-    margin-left: 10px;
+
+/* title end */
+
+
+/* section3 start */
+#About {
+    padding: 30px 0;
+}
+
+
+.about-main .row {
+    display: flex;
+}
+
+.about-main .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.about-content {
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin-left: 100px;
+}
+
+
+.about-content .h3-about {
+
+    font-size: clamp(20px, 7vw, 54px);
+    font-weight: 500;
+
+
+}
+
+.about-content .para {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.about-content .para1 {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    width: 80%;
+    margin: 20px 0;
+
+
+    color: #313243;
+    text-align: right;
+}
+
+.about-content .btn-header {
+    border-radius: 7px;
+    background-color: #fcc302;
+    margin-right: 30px;
+    border: 2px solid white;
+    padding: 10px 20px;
     color: white;
 }
 
-/* header end */
+
+
+.about-main .abouts {
+    /* background: url("/Images/about.png");*/
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/images_1/image2.png");
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.abouts .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    z-index: 2;
+    border-radius: 50%;
+    /* end */
+}
+
+/* title2 start */
+.title {
+    background-color: #fcc302;
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.title .h2-title {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+}
+
+.title .p-title1 {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 40%;
+    font-weight: 400;
+    margin: 20px auto;
+
+
+}
+
+.p-title {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    width: 400px;
+    padding-left: 3px;
+}
+
+.title-main .row {
+    display: flex;
+    gap: 20px;
+
+}
+
+.title-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.title-card1 {
+
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.title-card .h3-title {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.title-card .h2-card-title {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.title-content {
+    background-color: #fcc302;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title-content .h4-title {
+    font-size: 29px;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 10px 0;
+    font-size: 38px;
+
+}
+
+.title-content .btn-title2 {
+    background-color: violet;
+    justify-content: center;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20PX;
+    border: none;
+}
+
+
+/* title2 end */
+
+/* vetcare start */
+.vetcare {
+
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    margin: 30px 0;
+}
+
+.vetcare .h2-vetcare1 {
+    /* font-size: 50px; */
+    font-size: clamp(20px, 7vw, 50px);
+    font-weight: 700;
+    color: #313243;
+}
+
+.vetcare .p-vetcare2 {
+    font-size: 25px;
+    font-size: clamp(18px, 3vw, 25px);
+    width: 60%;
+    font-weight: 400;
+    margin: 20px auto;
+    font-size: 38px;
+    color: #313243;
+
+}
+
+.p-vetcare2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    width: 400px;
+}
+
+.vetcare-main .row {
+    display: flex;
+    gap: 20px;
+
+}
+
+.vetcare-main .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+
+}
+
+.vetcare-card {
+
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff; 
+    padding: 40px 0;
+}
+
+.vetcare-card .h3-vetcare {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.vetcare-card .h2-card-vetcare {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.vetcare-content {
+
+    text-align: center;
+    padding: 10px 0;
+}
+
+.vetcare-content .h4-vetcare3 {
+    font-size: 29px;
+    color: #313243;
+    font-weight: 600;
+    font-family: "Poppins";
+    
+    
+
+}
+
+.vetcare-content .h5-vetcare {
+    font-size: 20px;
+    color: #313243;
+    font-weight: 300;
+    font-family: "Poppins";
+    text-align: center;
+
+}
+
+
+.vetcare-content .btn-vetcare2 {
+    background-color: violet;
+    justify-content: center;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20PX;
+}
+
+.vetcare-content.fa-brandsfa-instagram {
+    background-color: rgba(143, 146, 59, 0.5) font-size: clamp(18px, 3vw, 24px);
+    color: white;
+    margin: 5px 0;
+    padding-top: 2px;
+
+}
+
+
+/* vetcare end */
+
+/* icons start here */
+.icon{
+    background: linear-gradient(rgba(252,195,2,0.6),rgba(252,195,2,0.6)),url(/images_1/icon.png);
+     
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.icon .row{
+    display: flex;
+    gap: 20px;
+
  
+}
+.icon .row .col{
+      
+    margin: 200px 0;
+    margin-left:7%;
+    width: 300px;
+   
+
+}
+.col .icons{
+
+    font-size: 80px;
+    color: white;
+text-align: center;
+}
+.icon-content .icon-h2{
+    font-size: 42px;
+color: #ffffff;
+font-weight: 500;
+font-family: "Poppins";
+text-align: right;
+text-align: center;
+}
+.icon-content .icon-h3{
+    font-size: 38px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Poppins";
+text-align: right;
+text-align: center;
+}
+
+
+
+
+/* icons End Here */
+
+#Footer {
+    padding: 50px 0;
+    background-color: black;
+}
+
+#Footer .row {
+    display: flex;
+}
+
+#Footer .row .col-4 {
+ text-align: center;
+    width: 40%;
+}
+
+#Footer .row .col-6 {
+    width: 60%;
+}
+
+.col-6 .row .col {
+    width: 33.33%;
+}
+
+.footer .h2-footer {
+    font-size: clamp(18px, 3vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.footer .ul-footer {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ul-footer .li-footer {
+    margin: 10px 0;
+}
+
+.ul-footer .li-footer .a-footer {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.footer .p-footer {
+
+    font-size: clamp(18px, 3vw, 24px);
+    color: #ffffff;
+    width: 80%;
+    margin:  20px 0;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+.footer-icon i{
+    font-size: clamp(18px, 3vw, 24px);
+    color: white;
+    margin: 0 5px;
+}
+#email{
+    border: 2px solid;
+    background-color: #ffd17e;
+}
+
+.email-content1 .h2-email1 {
+
+
+    margin-top: 100px;
+ font-size: 75px;
+color: #21243d;
+font-weight: 700;
+font-family: "Montserrat";
+text-align: center;
+
+
+
+}
+.email-content1 .p-email1 {
+    margin: 40px auto;
+    width: 70%;
+    font-size: 30px;
+color: #21243d;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+
+
+
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 100px;
+   
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.email-input {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+}
+
+.subscribe-button {
+    background-color: #2D2A5C;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #1A1A40;
+}
+/* email ends */
+
+/* footer end */

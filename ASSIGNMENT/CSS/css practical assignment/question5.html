@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover{
+    background-color: #3498db;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x900');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Two Column Layout */
+.column-layout {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.column {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.secondary-button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar-widget {
+    margin-bottom: 30px;
+}
+
+.sidebar-widget h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.sidebar-widget li {
+    margin-bottom: 15px;
+}
+
+.sidebar-widget h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.quick-links a:hover {
+    color: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #3498db;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.1);
+     
+    
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s;
+}
+.social-links .i{
+   margin-left: 50px;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navigation for mobile */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #3498db;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Hero section adjustments */
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    /* Stack columns vertically on mobile */
+    .column-layout {
+        flex-direction: column;
+    }
+    
+    /* Adjust font sizes for readability */
+    .main-content h2 {
+        font-size: 24px;
+    }
+    
+    .main-content p {
+        font-size: 16px;
+    }
+    
+    /* Increase padding for touch targets */
+    .secondary-button, .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    
+    /* Footer adjustments */
+    .footer-section {
+        flex: 100%;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Increase padding for better touch experience */
+    .column {
+        padding: 15px;
+    }
+    
+    /* Further reduce font sizes */
+    .main-content h2 {
+        font-size: 22px;
+    }
+    
+    .sidebar-widget h3 {
+        font-size: 18px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Tops Carrier Center</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover our amazing services and solutions</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </header>
+
+    <!-- Two Column Content Section -->
+    <main class="container">
+        <div class="column-layout">
+            <section class="column main-content">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum, nunc id lacinia tincidunt, nisi nisl aliquam nunc, eget aliquet nisl nunc eget nisl. Sed vitae nisl eget nisl aliquam tincidunt.</p>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec lacinia, nisl id lacinia tincidunt, nisi nisl aliquam nunc, eget aliquet nisl nunc eget nisl. Sed vitae nisl eget nisl aliquam tincidunt.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <button class="secondary-button">Read More</button>
+            </section>
+            
+            <aside class="column sidebar">
+                <div class="sidebar-widget">
+                    <h3>Latest News</h3>
+                    <ul>
+                        <li>
+                            <h4>New Product Launch</h4>
+                            <p>Our newest product line has launched with great success.</p>
+                        </li>
+                        <li>
+                            <h4>Company Expansion</h4>
+                            <p>We're excited to announce our expansion to new markets.</p>
+                        </li>
+                        <li>
+                            <h4>Industry Award</h4>
+                            <p>We've been recognized with a prestigious award in our field.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing high-quality services and solutions to our clients.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+                <p><i class="fas fa-phone"></i> +91 8490848805</p>
+                <p><i class="fas fa-envelope"></i> info@company.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CompanyName. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+     
+</body>
+</html>
