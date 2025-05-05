@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divide by Zero Example</title>
+</head>
+<body>
+  <script>
+    function divide(a, b) {
+      try {
+        if (b === 0) {
+          throw new Error("Cannot divide by zero");
+        }
+        let result = a / b;
+        alert("Result: " + result);
+      } catch (error) {
+        alert("Error: " + error.message);
+      }
+    }
+
+    // Example: Try dividing 10 by 0
+    divide(10, 0);
+  </script>
+</body>
+</html>

@@ -218,82 +218,704 @@
             border-radius: 4px;
             font-size: 12px;
         }
+
+        /* pre starrts */
+        .pre {
+            width: 100%;
+            margin-top: 40px;
+            background-color: #282c3d;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-icon {
+            background-color: #e05c44;
+            width: 60px;
+            margin-left: 7%;
+            margin-top: 20px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-icon {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+
+        .movie-badge {
+            position: absolute;
+            bottom: 29%;
+            left: 10px;
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .badge-premiere {
+            background-color: #e05c44;
+        }
+
+        .badge-exclusive {
+            background-color: #ffc107;
+            color: black;
+        }
+
+
+
+        /* pre ends */
     </style>
 </head>
 
 <body>
-    <!-- Main Navbar -->
-    <nav class="navbar navbar-expand bms-navbar">
+    <!-- NavBar1 Start -->
+    <section>
+        <nav class="navbar navbar-expand bms-navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/Logo-BookMyShow.png" alt="BookMyShow">
+                </a>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input"
+                        placeholder="Search for Movies, Events, Plays, Sports and Activities" data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
+                </div>
+
+                <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 pb-0">
+                                <button type="button" class="btn btn-link text-dark" data-bs-dismiss="modal">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <div class="flex-grow-1 mx-3">
+                                    <input type="text" class="form-control search-input"
+                                        placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body pt-0 mt-3">
+                                <div class="container ">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs border-0 mt-3" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="movies-tab" data-bs-toggle="tab"
+                                                data-bs-target="#movies" type="button" role="tab">MOVIES</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="cinemas-tab" data-bs-toggle="tab"
+                                                data-bs-target="#cinemas" type="button" role="tab">CINEMAS</button>
+                                        </li>
+                                        <li class="ms-auto d-flex align-items-center">
+                                            <span class="me-2">Filter</span>
+
+                                            <div class="language-filter border">HINDI</div>
+                                            <div class="language-filter border">GUJARATI</div>
+                                            <div class="language-filter border">ENGLISH</div>
+                                            <div class="language-filter border">TAMIL</div>
+                                            <div class="language-filter border">TELUGU</div>
+                                            <div class="language-filter border">MALAYALAM</div>
+                                            <div class="language-filter border border-danger text-danger">+ 4 MORE</div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab content -->
+                                    <div class="tab-content" id="myTabContent">
+                                        <!-- Movies Tab -->
+                                        <div class="tab-pane fade show active" id="movies" role="tabpanel"
+                                            aria-labelledby="movies-tab">
+                                            <div class="row">
+                                                <!-- Hindi Movies -->
+                                                <div class="col-md-3">
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">HINDI</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>A Minecraft Movie <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">82%</span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="format-badge">3D</span>
+                                                                <span class="format-badge">4DX 3D</span>
+                                                                <span class="format-badge">2D</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Chhaava (UA16) <span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">92%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>IPL T20 2025 Live Screening-(GT VS DC) (Hindi) (U)
+                                                                <span class="badge-new">NEW</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>IPL T20 2025 Live Screening-(KKR VS GT) (Hindi) (U)
+                                                                <span class="badge-new">NEW</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Jaat (UA16) <span class="badge-new">NEW</span> <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">90%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Kesari-chapter-2 <span class="badge-new">New</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>L2: Empuraan (Hindi) (UA16) <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">80%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Love Aaj Kal (2009) (UA) <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">89%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Odela (Hindi) (A) <span class="badge-new">New</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Paddington in Peru <span class="badge-new">New</span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="format-badge">2D</span>
+                                                                <span class="format-badge">4DX</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Padmavaat (2D Hindi) (UA) <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">86%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Sikandar (UA13) <span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">86%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Superboy of Malegoan (UA) <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">86%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>The Diplomat (UA) <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">86%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Gujarati Movies -->
+                                                <div class="col-md-3">
+                                                    <div class="movie-list">
+                                                        <div class="movie-item">
+                                                            <div>The Secret Of Devkaali (UA) <span
+                                                                    class="badge-new">New</span></div>
+                                                        </div>
+                                                        <div class="movie-item">
+                                                            <div>Vicky Donar (UA) <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">79%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="movie-item">
+                                                            <div>Window's Shadow (A) <span class="badge-new">New</span>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="text-danger">GUJARATI</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>All The Best Pandya (UA13) <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">91%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Faati Ne? (UA16) <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">92%</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Jija Sala Jija (UA13) <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">86%</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Mithada Mehmaan (UA13) <span
+                                                                    class="badge-new">New</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Umbaro (UA13) <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">86%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- English Movies -->
+                                                <div class="col-md-3">
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">ENGLISH</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Warfare <span class="badge-new">NEW</span> <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">84%</span></div>
+                                                            <div>
+                                                                <span class="format-badge">IMAX 2D</span>
+                                                                <span class="format-badge">2D</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>A Minecraft Movie <span class="heart-icon">❤</span>
+                                                                <span class="movie-rating">82%</span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="format-badge">3D</span>
+                                                                <span class="format-badge">IMAX 3D</span>
+                                                                <span class="format-badge">2D</span>
+                                                                <span class="format-badge">4DX 3D</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Black Bag (A) <span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">74%</span></div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Dog Man <span class="badge-new">NEW</span> <span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">88%</span></div>
+                                                            <div>
+                                                                <span class="format-badge">2D</span>
+                                                                <span class="format-badge">4DX</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Tamil and Telugu Movies -->
+                                                <div class="col-md-3">
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">TAMIL</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Good Bad Ugly (UA16) <span class="badge-new">NEW</span>
+                                                                <span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">86%</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="movie-item">
+                                                            <div>Sachein (UA) <span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">80%</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">TELUGU</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Odela 2 (A) <span class="badge-new">NEW</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">MALAYALAM</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Alappuzha Gymkhana (UA 7)<span
+                                                                    class="badge-new">NEW</span><span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">84%</span></div>
+                                                        </div>
+                                                        <div class="movie-item">
+                                                            <div>Bazooka (UA 16)<span class="badge-new">NEW</span><span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">73%</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">PUNJABI</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Akaal (UA 16) <span class="badge-new">NEW</span><span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">73%</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">BENGALI</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Killbill Society (UA 16) <span
+                                                                    class="badge-new">NEW</span><span
+                                                                    class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">74%</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="movie-list">
+                                                        <h6 class="text-danger">SINDHI</h6>
+
+                                                        <div class="movie-item">
+                                                            <div>Vardan 3 (UA)<span class="heart-icon">❤</span> <span
+                                                                    class="movie-rating">100%</span></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Cinemas Tab -->
+                                        <div class="tab-pane fade" id="cinemas" role="tabpanel"
+                                            aria-labelledby="cinemas-tab">
+                                            <div class="row mt-4">
+                                                <div class="col-md-3">
+                                                    <ul class="cinema-list">
+                                                        <li>1.Newfangled Miniplex (Twin Seat): Mondeal Park</li>
+                                                        <li>2.Newfangled Miniplex (Twin Seat): Motera</li>
+                                                        <li>AB Miniplex: Shivranjini Cross Road, Satellite</li>
+                                                        <li>Apple Cinema: Bapunagar</li>
+                                                        <li>Apple Multiplex: Gota, Ahmedabad</li>
+                                                        <li>Apple Multiplex: Maninagar, Ahmedabad</li>
+                                                        <li>Banana Smartplex: SBR, Thaltej</li>
+                                                        <li>Cinepolis: Kankubag, Vastral, Ahmedabad</li>
+                                                        <li>Cinepolis: Nexus Ahmedabad One</li>
+                                                        <li>Cineprime Cinema: Nikol</li>
+                                                        <li>Cineworld Cinema: Naroda, Ahmedabad <span
+                                                                class="badge-new-cinema">NEW</span></li>
+                                                        <li>City Gold Satellite: Ahmedabad</li>
+                                                        <li>City Gold: Ashram Road</li>
+                                                        <li>City Gold: Bopal</li>
+                                                        <li>City Gold: Jivraj Park <span
+                                                                class="badge-new-cinema">NEW</span>
+                                                        </li>
+                                                        <li>City Gold: Motera</li>
+                                                        <li>City Gold: Vastral, Ahmedabad</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <ul class="cinema-list">
+                                                        <li>City Pulse: Orient Miniplex, Ellisbridge</li>
+                                                        <li>Classic Cinema, Kudasan: Gandhinagar</li>
+                                                        <li>Connplex Cinemas (Luxuriance): SBR</li>
+                                                        <li>Connplex Cinemas (Luxuriance): Vaishnodevі</li>
+                                                        <li>Connplex Cinemas (Signature): Gandhinagar</li>
+                                                        <li>Connplex Cinemas (Signature): Gota</li>
+                                                        <li>Connplex Cinemas: Parimal</li>
+                                                        <li>Connplex Cinemas: Prahladnagar</li>
+                                                        <li>Connplex Cinemas: South Bopal</li>
+                                                        <li>Devi Multiplex: Naroda</li>
+                                                        <li>Drive In Cinema: Ahmedabad</li>
+                                                        <li>Havelock Cineflix Cinemas: Maninagar, Ahmedabad</li>
+                                                        <li>INOX: Himalaya Mall, Drive In Road, Ahmedabad</li>
+                                                        <li>K Sera Sera: Iskon Circle, SG Highway</li>
+                                                        <li>LHD Cinemas: Chandkheda</li>
+                                                        <li>Magic Cinema: YMCA Club</li>
+                                                        <li>Mango Plus Cinemas: Nikol</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <ul class="cinema-list">
+                                                        <li>Miraj Cinemas Cine Pride: Krishna Nagar</li>
+                                                        <li>Miraj Cinemas: Shalin Square, Hathjian, Ahmedabad</li>
+                                                        <li>Miraj Cinemas: Vardhman Square, Sanand, Ahmedabad</li>
+                                                        <li>Miraj Cinemas: Vitthal Plaza, New Naroda</li>
+                                                        <li>Miraj City Pulse: Ahmedabad</li>
+                                                        <li>Mukta A2 Cinemas: Chandkheda</li>
+                                                        <li>Mukta A2 Cinemas: Rajyash, South Vasna, Ahmedabad</li>
+                                                        <li>Mukta A2 Cinemas: Ratnanjali Square Satellite</li>
+                                                        <li>Mukta A2 Cinemas: The Retail Park (TRP) Bopal</li>
+                                                        <li>Mukta A2 Shiv Cinema: Ahmedabad</li>
+                                                        <li>NY Cinemas: Chandkheda</li>
+                                                        <li>NY Cinemas: Swagat Mall</li>
+                                                        <li>Orange Cinemas: Bapunagar</li>
+                                                        <li>P Square Movieplex, Gota: Ahmedabad</li>
+                                                        <li>PVR: Acropolis, Ahmedabad</li>
+                                                        <li>PVR: Arved Transcube, Ahmedabad</li>
+                                                        <li>PVR: Motera, Ahmedabad</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <ul class="cinema-list">
+                                                        <li>PVR: Palladium Mall, Ahmedabad</li>
+                                                        <li>PVR: Satyamev Emporio Odhav, Ahmedabad</li>
+                                                        <li>Rajhans Cinemas: Nikol</li>
+                                                        <li>Rajhans Cinemas: Satadhar</li>
+                                                        <li>Rajhans Cinemas: The CBD Mall, Zundal Circle</li>
+                                                        <li>Rajhans Cinemas: Vastral</li>
+                                                        <li>Revolution Multiplex, CTM: Ahmedabad</li>
+                                                        <li>Rupam Arth Cineplex: Sanand</li>
+                                                        <li>Rupam Multiplex: Ahmedabad</li>
+                                                        <li>SB Multiplex: Agora Mall</li>
+                                                        <li>SK Cinemas: Hathijan</li>
+                                                        <li>Sanelite Cinemas: Science City</li>
+                                                        <li>Savvy Swaraaj Miniplex: Gota, Ahmedabad</li>
+                                                        <li>The Cinestar Miniplex: Bhat Circle, SP Ring Road</li>
+                                                        <li>White Screen Cinema (Five 11): Gandhinagar</li>
+                                                        <li>Wide Angle: Ahmedabad</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Selector -->
+                <div class="location-selector d-none d-lg-block">
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Ahmedab...
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <i class="fa-solid fa-magnifying-glass me-3"></i>
+                                    <input type="text" class="search-input1 " placeholder="Search for Your City"
+                                        data-bs-toggle="#myModal" data-bs-target="#searchModal">
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body text-danger">
+                                    <h5 class="pt-3"><i class="fa-solid fa-location-crosshairs fs-5"></i>
+                                        Detect my location</h5>
+                                </div>
+
+                                <hr>
+                                <div class="Populorcities" style="text-align: center; margin-bottom: 20px;">
+                                    Populor Cities
+                                </div>
+
+                                <div class="row">
+                                    <div class="col d-flex">
+                                        <div class="cities ms-5">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="">
+                                            <h6 style="text-align: center;">Mumbai</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt="">
+                                            <h6 style="text-align: center;">Delhi-NCR</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/bang-selected.png" alt="">
+                                            <h6 style="text-align: center;">Bangaluru</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt="">
+                                            <h6 style="text-align: center;">Hyedrabad</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ahd.png" alt="">
+                                            <h6 style="text-align: center;">Ahmedabad</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt="">
+                                            <h6 style="text-align: center;">Chandigadh</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/pune.png" alt="">
+                                            <h6 style="text-align: center;">Pune</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chen.png" alt="">
+                                            <h6 style="text-align: center;">Chennai</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/kolk.png" alt="">
+                                            <h6 style="text-align: center;">Kolkata</h6>
+                                        </div>
+
+                                        <div class="cities ms-4">
+                                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/koch.png" alt="">
+                                            <h6 style="text-align: center;">Kochi</h6>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <button type="button" class="btn btn-link mb-3 text-danger">View All Cities</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign In Button -->
+                <button class="sign-in-btn" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signInModalLabel">Get Started</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-grid gap-3">
+                                    <!-- Google Sign In -->
+                                    <button class="btn btn-outline-secondary position-relative text-start p-3">
+                                        <img src="//in.bmscdn.com/webin/common/icons/googlelogo.svg" alt="Google logo"
+                                            class="position-absolute start-3 top-50 translate-middle-y">
+                                        <span class="text-center d-block">Continue with Google</span>
+                                    </button>
+
+                                    <!-- Email Sign In -->
+                                    <button class="btn btn-outline-secondary position-relative text-start p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor"
+                                            class="bi bi-envelope position-absolute start-3 top-50 translate-middle-y"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        </svg>
+                                        <span class="text-center d-block">Continue with Email</span>
+                                    </button>
+
+                                    <!-- Apple Sign In -->
+                                    <button class="btn btn-outline-secondary position-relative text-start p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor"
+                                            class="bi bi-apple position-absolute start-3 top-50 translate-middle-y"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                            <path
+                                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                        </svg>
+                                        <span class="text-center d-block">Continue with Apple</span>
+                                    </button>
+
+                                    <div class="text-center py-2">OR</div>
+
+                                    <!-- Mobile Number Sign In -->
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <img src="/Images/indianflag.svg" alt="India flag" class="me-1">
+                                            +91
+                                        </span>
+                                        <input type="text" class="form-control"
+                                            placeholder="Continue with mobile number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <p class="small mb-0">I agree to the <a href="#">Terms & Conditions</a> & <a
+                                        href="#">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Button (Mobile) -->
+                <button class="menu-btn ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </section>
+    <!-- NavBar1 End -->
+
+    <!-- Navbar2 Start -->
+    <section>
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="/images/Logo-BookMyShow.png" alt="BookMyShow">
-            </a>
+            <div class="nav-menu">
+                <!-- Primary Navigation -->
+                <ul class="primary-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Plays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Activities</a>
+                    </li>
+                </ul>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <input type="text" class="search-input"
-                    placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                <!-- Secondary Navigation -->
+                <ul class="secondary-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ListYourShow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Corporates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Gift Cards</a>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Location Selector -->
-            <div class="location-selector d-none d-lg-block">
-                Ahmedabad
-                <i class="fas fa-chevron-down"></i>
-            </div>
-
-            <!-- Sign In Button -->
-            <button class="sign-in-btn">Sign in</button>
-
-            <!-- Menu Button (Mobile) -->
-            <button class="menu-btn ms-2">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
-    </nav>
-
-    <!-- Secondary Navigation -->
-    <div class="container">
-        <div class="nav-menu">
-            <!-- Primary Navigation -->
-            <ul class="primary-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Movies</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Stream</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Plays</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Activities</a>
-                </li>
-            </ul>
-
-            <!-- Secondary Navigation -->
-            <ul class="secondary-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">ListYourShow</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Corporates</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Offers</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Gift Cards</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </section>
+    <!-- NavBar2 End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -580,476 +1202,637 @@
 
         <!-- BAnner End -->
 
-        <!--your music studio start-->
+        <!-- Premiere start -->
+        <div class="pre">
 
+            <!-- Header -->
+            <header class="d-flex align-items-center mb-4">
+                <div class="logo-icon me-3">
+                    <span class="play-icon">▶</span>
+                </div>
+                <div>
+                    <h1 class="m-0 h3">PREMIERE</h1>
+                    <p class="m-0 small text">Watch new movies at home, every Friday</p>
+                </div>
+            </header>
+            <!--<div class="container"-->
+                <!-- Premieres Section -->
+                <div id="carouselExampleControlspre" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00440472-rtfquxhasq-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 1">
 
-        <h2 class="section-title">Your Music Studio</h2>
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Anaconda:Cursed Jungle</h5>
+                                            <p class="movie-genre">Sci-Fi/Adventure</p>
 
-        <div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437140-humshtekhq-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 1">
-                                <div class="music-info">
-                                    <h5 class="music-title">Guns N'Roses:India 2025</h5>
-                                    <p class="music-genre">Mahalaxmi Race course</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00391751-lcsxtysufz-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 2">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Chabak:Night Of Murder</h5>
+                                            <p class="movie-genre">Action/Thriller</p>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-alto-knights-et00439743-1743065318.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 3">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">The Alto Knights</h5>
+                                            <p class="movie-genre">Romance/Drama</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/opening-film-of-legacy-rewind--45-years-of-karz-et00440630-1743754944.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 4">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Opening Film of Legacy Rewind - 45 Years of Karz
+                                            </h5>
+                                            <p class="movie-genre">Sci-Fi/Action</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA2SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-jmwdsamftw-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 5">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Avatar 3D</h5>
+                                            <p class="movie-genre">Sci-Fi/Action</p>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00420853-ydtqmrqpyw-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 2">
-                                <div class="music-info">
-                                    <h5 class="music-title">Mandhar udhas live in concert</h5>
-                                    <p class="music-genre">Thakorbhai desai hall</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00393345-gxfwypefhr-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 1">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Hesitation Wound</h5>
+                                            <p class="movie-genre">Action/Drama</p>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00422599-xvwsghgdlx-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 2">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Universal Language</h5>
+                                            <p class="movie-genre">Drama/Historical</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00348457-kmcawsxtqn-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 3">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Lakadbagha</h5>
+                                            <p class="movie-genre">Action/Drama</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00430586-geekxfypdv-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 4">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">Baby Girl</h5>
+                                            <p class="movie-genre">Sci-Fi/Action </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-card">
+                                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00440648-uhmmhaxdst-portrait.jpg"
+                                            class="movie-poster w-100 h-75" alt="Movie 5">
+                                        <div class="movie-info">
+                                            <h5 class="movie-title">The Khans</h5>
+                                            <p class="movie-genre"> Comedy/Drama</p>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440554-etfaejnrmk-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 3">
-                                <div class="music-info">
-                                    <h5 class="music-title">Kirti Ghadvi&Sairam Dave</h5>
-                                    <p class="music-genre">Sabarmati Riverfront</p>
-                                    <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439473-eyajlbvgnm-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 4">
-                                <div class="music-info">
-                                    <h5 class="music-title">Aanand Vinod Musical Night</h5>
-                                    <p class="music-genre">Tagore Memorial Hall</p>
-                                    <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439482-egcvmbhbhw-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 5">
-                                <div class="music-info">
-                                    <h5 class="music-title">Bankim Phathak Musical Night</h5>
-                                    <p class="music-genre">Tagore Memorial Hall</p>
-                                    <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlspre"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlspre"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Premiere end -->
+
+
+
+    <!--your music studio start-->
+
+
+    <h2 class="section-title">Your Music Studio</h2>
+
+    <div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437140-humshtekhq-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 1">
+                            <div class="music-info">
+                                <h5 class="music-title">Guns N'Roses:India 2025</h5>
+                                <p class="music-genre">Mahalaxmi Race course</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433830-avedwchzbp-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 1">
-                                <div class="music-info">
-                                    <h5 class="music-title">Sagar Wali Qawwali</h5>
-                                    <p class="music-genre">Ahemdabad concert</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00420853-ydtqmrqpyw-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 2">
+                            <div class="music-info">
+                                <h5 class="music-title">Mandhar udhas live in concert</h5>
+                                <p class="music-genre">Thakorbhai desai hall</p>
+                                <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441800-rjcvgvjesg-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 2">
-                                <div class="music-info">
-                                    <h5 class="music-title">Musical Eve by Osman Mir</h5>
-                                    <p class="music-genre">Club-07 Ahemdabad</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMiBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439804-mgvdadgvgh-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="music 3">
-                                <div class="music-info">
-                                    <h5 class="music-title">Kumar Sanu live</h5>
-                                    <p class="music-genre">Karnavati club</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441367-agdxxtvndp-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 4">
-                                <div class="music-info">
-                                    <h5 class="music-title">Pool Party-aqua</h5>
-                                    <p class="music-genre">Science city road</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440551-alqruwtvjc-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 5">
-                                <div class="music-info">
-                                    <h5 class="music-title">Shuhana Sama with DR Anup</h5>
-                                    <p class="music-genre">Karnavati club</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA3MS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00431346-wwjzwyrhrp-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 1">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Good bad ugly</h5>
-                                    <p class="movie-genre">UA16+ Telgu,Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 86%</span>
-                                        <span class="votes">1.2K votes</span>
-                                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440554-etfaejnrmk-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 3">
+                            <div class="music-info">
+                                <h5 class="music-title">Kirti Ghadvi&Sairam Dave</h5>
+                                <p class="music-genre">Sabarmati Riverfront</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA3MzIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00002664-swayppelyw-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 2">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Love aaj kal</h5>
-                                    <p class="movie-genre">Romantic/Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 88%</span>
-                                        <span class="votes">28K votes</span>
-                                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439473-eyajlbvgnm-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 4">
+                            <div class="music-info">
+                                <h5 class="music-title">Aanand Vinod Musical Night</h5>
+                                <p class="music-genre">Tagore Memorial Hall</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICAxNjAgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00422579-fxcbhexsxd-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 3">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">A dog man</h5>
-                                    <p class="movie-genre">U English</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 82%</span>
-                                        <span class="votes">4.3K votes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzNDIuMUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408691-ccqetrbtcj-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 4">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Chhaava</h5>
-                                    <p class="movie-genre">UA16+ Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 92%</span>
-                                        <span class="votes">341.8K votes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA2SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-jmwdsamftw-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 5">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">umbaro</h5>
-                                    <p class="movie-genre">Sci-Fi/Action</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 95%</span>
-                                        <span class="votes">58.1K votes</span>
-                                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439482-egcvmbhbhw-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 5">
+                            <div class="music-info">
+                                <h5 class="music-title">Bankim Phathak Musical Night</h5>
+                                <p class="music-genre">Tagore Memorial Hall</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!--your music studio end-->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433830-avedwchzbp-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 1">
+                            <div class="music-info">
+                                <h5 class="music-title">Sagar Wali Qawwali</h5>
+                                <p class="music-genre">Ahemdabad concert</p>
+                                <div class="d-flex justify-content-between align-items-center">
 
-        <!--sports event start-->
-
-
-        <h2 class="section-title">sports event</h2>
-
-        <div id="sportsExampleControl" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col">
-                            <div class="sports-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00434722-xruapnrqzy-portrait.jpg"
-                                    class="sports-poster w-100 h-75" alt="sports 1">
-                                <div class="sports-info">
-                                    <h5 class="sports-title">Rajisthan Royals jaipur</h5>
-                                    <p class="sports-genre">Multiple venue</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="sports-card">
-                                <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAyMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436211-tlwrecyewq-portrait.jpg"
-                                    class="sports-poster w-100 h-75" alt="sports 2">
-                                <div class="sports-info">
-                                    <h5 class="sports-title">kolkata knight riders</h5>
-                                    <p class="sports-genre">Eden garden kolkata</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="sports-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA2IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434290-mhntbrsyqy-portrait.jpg"
-                                    class="sports-poster w-100 h-75" alt="sports 3">
-                                <div class="music-info">
-                                    <h5 class="sports-title">Mumbai Indians</h5>
-                                    <p class="sports-genre">Wankhede stadium</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxOCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00308166-dwdwmxezgm-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 4">
-                                <div class="music-info">
-                                    <h5 class="music-title">Shankus water park</h5>
-                                    <p class="movie-genre">Mheshana Ahemdabad</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00145294-kdcjyfmfcq-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 5">
-                                <div class="music-info">
-                                    <h5 class="music-title">Jo bolta h wo hota h</h5>
-                                    <p class="movie-genre">Ellis bridge Ahemdabad</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAyMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434752-bghzhnlqww-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 1">
-                                <div class="music-info">
-                                    <h5 class="music-title">Lucknow super giants</h5>
-                                    <p class="movie-genre">Ekana stadium lucknow</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441800-rjcvgvjesg-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 2">
+                            <div class="music-info">
+                                <h5 class="music-title">Musical Eve by Osman Mir</h5>
+                                <p class="music-genre">Club-07 Ahemdabad</p>
+                                <div class="d-flex justify-content-between align-items-center">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441114-ttdhyfkvrg-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 2">
-                                <div class="music-info">
-                                    <h5 class="music-title">chess champion ship</h5>
-                                    <p class="movie-genre">Club-07 Ahemdabad</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyNSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00405757-ynqmubyzlt-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="music 3">
-                                <div class="music-info">
-                                    <h5 class="music-title">marathon running</h5>
-                                    <p class="movie-genre">svm ground Ahemdabad</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437433-buxzypceca-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 4">
-                                <div class="music-info">
-                                    <h5 class="music-title">Pedal for healthy india</h5>
-                                    <p class="movie-genre">Science city road</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="music-card">
-                                <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00310955-yfluahpxvq-portrait.jpg"
-                                    class="music-poster w-100 h-75" alt="Music 5">
-                                <div class="movie-info">
-                                    <h5 class="music-title">vande matram virtual marathon</h5>
-                                    <p class="movie-genre">Karnavati club</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA3MS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00431346-wwjzwyrhrp-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 1">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Good bad ugly</h5>
-                                    <p class="movie-genre">UA16+ Telgu,Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 86%</span>
-                                        <span class="votes">1.2K votes</span>
-                                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMiBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439804-mgvdadgvgh-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="music 3">
+                            <div class="music-info">
+                                <h5 class="music-title">Kumar Sanu live</h5>
+                                <p class="music-genre">Karnavati club</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA3MzIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00002664-swayppelyw-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 2">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Love aaj kal</h5>
-                                    <p class="movie-genre">Romantic/Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 88%</span>
-                                        <span class="votes">28K votes</span>
-                                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441367-agdxxtvndp-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 4">
+                            <div class="music-info">
+                                <h5 class="music-title">Pool Party-aqua</h5>
+                                <p class="music-genre">Science city road</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICAxNjAgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00422579-fxcbhexsxd-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 3">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">A dog man</h5>
-                                    <p class="movie-genre">U English</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 82%</span>
-                                        <span class="votes">4.3K votes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzNDIuMUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408691-ccqetrbtcj-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 4">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">Chhaava</h5>
-                                    <p class="movie-genre">UA16+ Hindi</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 92%</span>
-                                        <span class="votes">341.8K votes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="movie-card">
-                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA2SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-jmwdsamftw-portrait.jpg"
-                                    class="movie-poster w-100 h-75" alt="Movie 5">
-                                <div class="movie-info">
-                                    <h5 class="movie-title">umbaro</h5>
-                                    <p class="movie-genre">Sci-Fi/Action</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="rating"><i class="fas fa-heart"></i> 95%</span>
-                                        <span class="votes">58.1K votes</span>
-                                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440551-alqruwtvjc-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 5">
+                            <div class="music-info">
+                                <h5 class="music-title">Shuhana Sama with DR Anup</h5>
+                                <p class="music-genre">Karnavati club</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#sportsExampleControl"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#sportsExampleControl"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA3MS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00431346-wwjzwyrhrp-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 1">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Good bad ugly</h5>
+                                <p class="movie-genre">UA16+ Telgu,Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 86%</span>
+                                    <span class="votes">1.2K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA3MzIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00002664-swayppelyw-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 2">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Love aaj kal</h5>
+                                <p class="movie-genre">Romantic/Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 88%</span>
+                                    <span class="votes">28K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICAxNjAgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00422579-fxcbhexsxd-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 3">
+                            <div class="movie-info">
+                                <h5 class="movie-title">A dog man</h5>
+                                <p class="movie-genre">U English</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 82%</span>
+                                    <span class="votes">4.3K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzNDIuMUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408691-ccqetrbtcj-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 4">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Chhaava</h5>
+                                <p class="movie-genre">UA16+ Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 92%</span>
+                                    <span class="votes">341.8K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA2SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-jmwdsamftw-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 5">
+                            <div class="movie-info">
+                                <h5 class="movie-title">umbaro</h5>
+                                <p class="movie-genre">Sci-Fi/Action</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 95%</span>
+                                    <span class="votes">58.1K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--your music studio end-->
+
+    <!--sports event start-->
+
+
+    <h2 class="section-title">sports event</h2>
+
+    <div id="sportsExampleControl" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="sports-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00434722-xruapnrqzy-portrait.jpg"
+                                class="sports-poster w-100 h-75" alt="sports 1">
+                            <div class="sports-info">
+                                <h5 class="sports-title">Rajisthan Royals jaipur</h5>
+                                <p class="sports-genre">Multiple venue</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sports-card">
+                            <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAyMSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436211-tlwrecyewq-portrait.jpg"
+                                class="sports-poster w-100 h-75" alt="sports 2">
+                            <div class="sports-info">
+                                <h5 class="sports-title">kolkata knight riders</h5>
+                                <p class="sports-genre">Eden garden kolkata</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sports-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA2IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434290-mhntbrsyqy-portrait.jpg"
+                                class="sports-poster w-100 h-75" alt="sports 3">
+                            <div class="music-info">
+                                <h5 class="sports-title">Mumbai Indians</h5>
+                                <p class="sports-genre">Wankhede stadium</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxOCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00308166-dwdwmxezgm-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 4">
+                            <div class="music-info">
+                                <h5 class="music-title">Shankus water park</h5>
+                                <p class="movie-genre">Mheshana Ahemdabad</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00145294-kdcjyfmfcq-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 5">
+                            <div class="music-info">
+                                <h5 class="music-title">Jo bolta h wo hota h</h5>
+                                <p class="movie-genre">Ellis bridge Ahemdabad</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAyMiBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434752-bghzhnlqww-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 1">
+                            <div class="music-info">
+                                <h5 class="music-title">Lucknow super giants</h5>
+                                <p class="movie-genre">Ekana stadium lucknow</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441114-ttdhyfkvrg-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 2">
+                            <div class="music-info">
+                                <h5 class="music-title">chess champion ship</h5>
+                                <p class="movie-genre">Club-07 Ahemdabad</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyNSBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00405757-ynqmubyzlt-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="music 3">
+                            <div class="music-info">
+                                <h5 class="music-title">marathon running</h5>
+                                <p class="movie-genre">svm ground Ahemdabad</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437433-buxzypceca-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 4">
+                            <div class="music-info">
+                                <h5 class="music-title">Pedal for healthy india</h5>
+                                <p class="movie-genre">Science city road</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="music-card">
+                            <img src="  https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00310955-yfluahpxvq-portrait.jpg"
+                                class="music-poster w-100 h-75" alt="Music 5">
+                            <div class="movie-info">
+                                <h5 class="music-title">vande matram virtual marathon</h5>
+                                <p class="movie-genre">Karnavati club</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA3MS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00431346-wwjzwyrhrp-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 1">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Good bad ugly</h5>
+                                <p class="movie-genre">UA16+ Telgu,Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 86%</span>
+                                    <span class="votes">1.2K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA3MzIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00002664-swayppelyw-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 2">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Love aaj kal</h5>
+                                <p class="movie-genre">Romantic/Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 88%</span>
+                                    <span class="votes">28K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICAxNjAgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00422579-fxcbhexsxd-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 3">
+                            <div class="movie-info">
+                                <h5 class="movie-title">A dog man</h5>
+                                <p class="movie-genre">U English</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 82%</span>
+                                    <span class="votes">4.3K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzNDIuMUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408691-ccqetrbtcj-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 4">
+                            <div class="movie-info">
+                                <h5 class="movie-title">Chhaava</h5>
+                                <p class="movie-genre">UA16+ Hindi</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 92%</span>
+                                    <span class="votes">341.8K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="movie-card">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA2SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-jmwdsamftw-portrait.jpg"
+                                class="movie-poster w-100 h-75" alt="Movie 5">
+                            <div class="movie-info">
+                                <h5 class="movie-title">umbaro</h5>
+                                <p class="movie-genre">Sci-Fi/Action</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="rating"><i class="fas fa-heart"></i> 95%</span>
+                                    <span class="votes">58.1K votes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sportsExampleControl" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sportsExampleControl" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
 
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

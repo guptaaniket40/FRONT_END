@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="5" cellpadding="10">
+        <thead>
+            <th>id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            
+        </thead>
+        <tbody >
+
+        </tbody>
+    </table>
+
+    <script>
+        fetch("https://dummyjson.com/users",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            let tbody = document.querySelector("tbody");
+
+            data.forEach((user) => {
+                console.log(user)
+
+                let trow = tbody.insertRow();
+                let idcell = trow.insertCell(0);
+                let Firstnamecell = trow.insertCell(1)
+                 
+
+                idcell.textContent = user.id;
+                namecell.textContent = user.Firstname;
+                Email.textContent = user.Lastname;
+                
+
+            });
+
+        })
+    </script>
+</body>
+</html>
