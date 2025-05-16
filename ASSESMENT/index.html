@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ex.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Booking</h1>
+        <form id="bookingForm">
+
+            <div class="form-group">
+                <label>Booking Type:</label>
+                <select id="bookingType">
+                    <option value="">Select type</option>
+                    <option value="full">Full Day</option>
+                    <option value="half">Half Day</option>
+                    <option value="hourly">Hourly</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Number of People:</label>
+                <input type="number" id="people" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group hidden" id="timeGroup">
+                <label>Time:</label>
+                <input type="time" id="time">
+            </div>
+
+            <div class="form-group hidden" id="slotGroup">
+                <label>Meal Slot:</label>
+                <select id="slot">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <script src="ex.js"></script>
+</body>
+</html>
