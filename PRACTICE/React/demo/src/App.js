@@ -19,12 +19,16 @@ import React from "react";
 //import Usecard from "./Useeffect/Usecard";
 //import Usetable from "./Useeffect/Usetable";
 // import Footerdata from "./Bootstrap/Footerdata";
-import Home from "./Layout/Pages/Home";
+// import Home from "./Layout/Pages/Home";
 import { BrowserRouter, Routes , Route } from "react-router-dom";
-import Help from "./Layout/Pages/Help";
-import About from "./Layout/Pages/About";
-import Footer from "./Layout/Common/Footer";
-import Contact from "./Layout/Pages/Contact";
+// import Navbar from "./Project/Common/Navbar";
+import Home from "./Project/Pages/Home";
+import AboutUs from "./Project/Pages/AboutUs";
+import ContactUs from "./Project/Pages/ContactUs";
+import HelpUs from "./Project/Pages/HelpUs";
+ 
+ 
+ 
 
  
 
@@ -61,16 +65,20 @@ function App() {
             {/* {<Usetable/>} */}
                {/* { <Usetable />}  */}
                {/* {<Footerdata/>} */}
+                
+                
+
                
 
 
                
 
             <Routes>
-                <Route  path="/" element={<Home />} />
-                <Route  path="/Help" element={<Help />} />
-                <Route  path="/About" element={<About />} />
-                 <Route  path="/Contact" element={<Contact />} />
+                <Route  path="/" element={<Home />}/> 
+                 <Route  path="/Aboutus" element={<AboutUs />}/> 
+                  <Route  path="/Contactus" element={<ContactUs/>}/> 
+                   <Route  path="/Helpus" element={<HelpUs />}/> 
+                 
             </Routes>
 
             

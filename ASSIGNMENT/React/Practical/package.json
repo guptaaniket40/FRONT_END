@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "browser-router": "^0.2.0",
+    "react-browser-router": "^2.1.2"
+  }
 }
