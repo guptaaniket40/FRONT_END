@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import logo from './logo.png'; // Add your logo in the src folder
 
 function Navbar() {
   return (
@@ -20,13 +19,13 @@ function Navbar() {
               <NavLink className="nav-link " to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/AboutUs">About</NavLink>
+              <NavLink className="nav-link" to="/About">About</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link" to="/contactus">Contact</NavLink>
+                <NavLink className="nav-link" to="/Contact">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/HelpUS">Help</NavLink>
+              <NavLink className="nav-link" to="/Help">Help</NavLink>
             </li>
           </ul>
           <form className="d-flex me-3">
