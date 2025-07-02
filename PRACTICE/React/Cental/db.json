@@ -1,0 +1,62 @@
+{
+  "blog": [
+    {
+      "id": "1",
+      "title": "Rental Cars how to check driving fines?",
+      "desc": "Rental cars are a convenient way to get around, but they can also be a sourc",
+      "comment": "9",
+      "name": "Nikhil gupta",
+      "date": "2019-01-01",
+      "image": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "id": "2",
+      "title": "How to check driving fines?",
+      "desc": "Driving fines can be a real pain, but there are ways to check them",
+      "comment": "5",
+      "name": "annu",
+      "date": "2019-05-02",
+      "image": "https://images.pexels.com/photos/8622821/pexels-photo-8622821.jpeg"
+    },
+    {
+      "id": "1750572164068",
+      "title": "audi car is most popular car in india",
+      "desc": "this car is looking beuatiful and its features is olso good",
+      "comment": "15",
+      "name": "gupta aniket",
+      "date": "2025-06-22",
+      "image": "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?_gl=1*1d1l8l9*_ga*MTQyNDIzNzgwMC4xNzM3ODcxNzYz*_ga_8JE65Q40S6*czE3NTA1NzE2NzEkbzEyJGcxJHQxNzUwNTcxOTQ2JGo1MCRsMCRoMA.."
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@example.com",
+      "password": "121212",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@example.com",
+      "password": "12345",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@example.com",
+      "password": "123456",
+      "status": "block"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "aniket",
+      "email": "aniket@gmail.com",
+      "password": "123123"
+    }
+  ]
+}

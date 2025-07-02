@@ -1,0 +1,60 @@
+{
+  "service": [
+    {
+      "id": "1",
+      "title": "Arc Massage",
+      "desc": " It is a type of massage focused on muscle release, recovery, and overall body wellness,",
+      "image": "https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Breath of Life Massage",
+      "desc": "A massage technique or a massage tool that uses a specific arc-shaped design or motion",
+      "image": "https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg"
+    },
+    {
+      "id": "3",
+      "title": "Vivify Massage",
+      "desc": "Vivify Massage offers therapeutic and medical massage, focusing on health, body wellness, and healing.",
+      "image": "https://images.pexels.com/photos/275768/pexels-photo-275768.jpeg"
+    },
+    {
+      "id": "1751362766178",
+      "title": "Masterpiece Massage",
+      "desc": " Its a highly personalized and immersive massage experience, often described  spa treatment. ",
+      "image": "https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg",
+      "": "d"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@example.com",
+      "password": "121212",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@example.com",
+      "password": "12345",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@example.com",
+      "password": "123456",
+      "status": "block"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "aniket",
+      "email": "aniket@gmail.com",
+      "password": "123123"
+    }
+  ]
+}

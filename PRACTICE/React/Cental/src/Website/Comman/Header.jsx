@@ -1,7 +1,23 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+ import React, { useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+     const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Uid")){
+            redirect("/login")
+        }
+    }, [])
+
+    const logout=()=>{
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        redirect("/login")
+        toast.success("user logout successfully")
+    }
+
     return (
         <div>
             {/* Topbar Start */}
@@ -31,10 +47,10 @@ function Header() {
             <div className="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <a href className="navbar-brand p-0">
+                        <NavLink to="/" className="navbar-brand p-0">
                             <h1 className="display-6 text-primary"><i className="fas fa-car-alt me-3" />Cental</h1>
                             {/* <img src="img/logo.png" alt="Logo"> */}
-                        </a>
+                        </NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span className="fa fa-bars" />
                         </button>
@@ -43,20 +59,45 @@ function Header() {
                                 <NavLink to="/" className="nav-item nav-link active">Home</NavLink>
                                 <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                 <NavLink to="/Service" className="nav-item nav-link">Service</NavLink>
-                                <a href="blog.html" className="nav-item nav-link">Blog</a>
+                                <NavLink to="/Blog" className="nav-item nav-link">Blog</NavLink>
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div className="dropdown-menu m-0">
-                                        <a href="feature.html" className="dropdown-item">Our Feature</a>
-                                        <a href="cars.html" className="dropdown-item">Our Cars</a>
-                                        <a href="team.html" className="dropdown-item">Our Team</a>
-                                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                                        <a href="404.html" className="dropdown-item">404 Page</a>
+                                        <NavLink  to="/Features" className="dropdown-item">Our Feature</NavLink>
+                                        <NavLink to="/Car" className="dropdown-item">Our Cars</NavLink>
+                                        <NavLink to="/Team" className="dropdown-item">Our Team</NavLink>
+                                        <NavLink to="/Testimonial" className="dropdown-item">Testimonial</NavLink>
                                     </div>
                                 </div>
-                                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                  <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+                                    {(()=>{
+                                        if(localStorage.getItem("Uid")){
+                                            return(
+                                                <>
+                                                     <NavLink to="/edit" className="nav-item nav-link">hello {localStorage.getItem("Uname")}</NavLink>
+                                                </>
+                                            )
+                                        }
+                                    })()}
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Uid")){
+                                                return(
+                                                    <>
+                                                         <NavLink onClick={logout} className="nav-item nav-link">Logout</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                    <>
+                                                         <NavLink to="/login" className="nav-item nav-link">Ulogin</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                        })()
+                                    }
                             </div>
-                            <a href="#" className="btn btn-primary rounded-pill py-2 px-4">Get Started</a>
                         </div>
                     </nav>
                 </div>

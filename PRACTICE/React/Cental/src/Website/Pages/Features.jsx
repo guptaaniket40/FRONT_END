@@ -7,7 +7,7 @@ function Features() {
   return (
     <div>
       <Header/>
-      <Navb/>
+      <Navb title=" Our Features" name="Features"/> 
 {/* Features Start */}
 <div className="container-fluid feature py-5">
   <div className="container py-5">

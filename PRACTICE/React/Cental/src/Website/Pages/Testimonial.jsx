@@ -7,7 +7,7 @@ function Testimonial() {
   return (
     <div>
       <Header/>
-      <Navb/>
+      <Navb title="Our Testimonial" name="Testimonial"/> 
 {/* Testimonial Start */}
 <div className="container-fluid testimonial py-5">
   <div className="container py-5">
