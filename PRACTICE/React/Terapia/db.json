@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Arc Massage",
-      "desc": " It is a type of massage focused on muscle release, recovery, and overall body wellness,",
+      "desc": " It is a type of massage focused on muscle release, recovery, and overall body wellness,is good.",
       "image": "https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg"
     },
     {
@@ -19,17 +19,16 @@
       "image": "https://images.pexels.com/photos/275768/pexels-photo-275768.jpeg"
     },
     {
-      "id": "1751362766178",
-      "title": "Masterpiece Massage",
-      "desc": " Its a highly personalized and immersive massage experience, often described  spa treatment. ",
-      "image": "https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg",
-      "": "d"
+      "id": "1751606792669",
+      "title": "Body massage",
+      "desc": "Body massage therapy is a manual therapy that involves manipulating the soft tissues of the body\n",
+      "image": "https://images.pexels.com/photos/7365398/pexels-photo-7365398.jpeg"
     }
   ],
   "user": [
     {
       "id": "1",
-      "name": "user1",
+      "name": "Aniket",
       "email": "user1@example.com",
       "password": "121212",
       "status": "unblock"
@@ -47,14 +46,86 @@
       "email": "user3@example.com",
       "password": "123456",
       "status": "block"
+    },
+    {
+      "id": "1751702554965",
+      "name": "gupta aniket",
+      "email": "user1@example.com",
+      "password": "14141",
+      "status": "unblock"
     }
   ],
   "admin": [
     {
       "id": "1",
-      "name": "aniket",
+      "name": "Aniket",
       "email": "aniket@gmail.com",
       "password": "123123"
+    },
+    {
+      "id": "1751703861954",
+      "name": "gupta aniket",
+      "email": "aniket1@gmail.com",
+      "password": "123123",
+      "status": "unblock"
+    }
+  ],
+  "Blog": [
+    {
+      "id": "1",
+      "title": "Remove back pain while working on a body  ",
+      "desc": "A combination of targeted exercises, manual therapy, and ergonomic\n",
+      "date": "5-7-2025",
+      "comment": "5",
+      "image": "https://images.pexels.com/photos/7298904/pexels-photo-7298904.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Benefits of a weekly physiotherapy excericeand workout ",
+      "desc": "Weekly physiotherapy sessions offer a range and it is good for health so use this work. ",
+      "date": "10-7-2025",
+      "comment": "10",
+      "image": "https://images.pexels.com/photos/5473182/pexels-photo-5473182.jpeg"
+    },
+    {
+      "id": "3",
+      "title": "Regular excercise can slow ageing process. ",
+      "desc": "improving various physical and cognitive functions and reducing the risk of age-related diseases. ",
+      "date": "15-7-2025",
+      "comment": "15",
+      "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
+    }
+  ],
+  "Team": [
+    {
+      "id": "1",
+      "Name": "DR.Sanjay kumar ",
+      "desc": "Doctor of Humanistic Therapist",
+      "image": "https://images.pexels.com/photos/4769130/pexels-photo-4769130.jpeg"
+    },
+    {
+      "id": "2",
+      "Name": "DR.Neha sharma",
+      "desc": "Doctor of Physical Therapist ",
+      "image": "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg"
+    },
+    {
+      "id": "3",
+      "Name": "DR.Deepak kumar ",
+      "desc": "Doctor of Rehabilitation Therapist",
+      "image": "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg"
+    },
+    {
+      "id": "4",
+      "Name": "DR.Sanjana gupta ",
+      "desc": "Doctor of Psychologists Therapist ",
+      "image": "https://images.pexels.com/photos/8376278/pexels-photo-8376278.jpeg"
+    },
+    {
+      "id": "1751871766729",
+      "Name": "Dr.akaksh",
+      "desc": "doctor of cardiologist",
+      "image": "https://images.pexels.com/photos/6129118/pexels-photo-6129118.jpeg"
     }
   ]
 }

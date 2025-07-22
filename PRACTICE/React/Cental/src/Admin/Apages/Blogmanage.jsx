@@ -127,7 +127,7 @@ function Blogmanage() {
                                         </button>
                                     </td>
                                 </tr>
-                            )
+                            )   
                         })
                     }
                 </tbody>
